@@ -5,11 +5,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <!-- SEO Meta Tags -->
-  <title>Gabe Mods | Home</title>
+  <title>Gabe Mods V2 | Home</title>
   <meta name="description" content="Gabe Mods provides high-quality, malware-free mods for Android and iOS including Geometry Dash, Subway Surfers, Grand Battle Royale and more.">
   <meta name="keywords" content="Gabe Mods, Android mods, iOS mods, Geometry Dash mod, Spotify mod, APK downloads, game mods">
   <meta name="author" content="Gabe Mods">
-  <meta property="og:title" content="Gabe Mods">
+  <meta property="og:title" content="Gabe Mods V2">
   <meta property="og:description" content="High-quality Android and iOS mods. Safe, free, and easy to install.">
   <meta property="og:image" content="assets/images/IMG_7790.jpeg">
   <meta name="twitter:card" content="summary_large_image">
@@ -49,12 +49,12 @@
     <!-- Header -->
     <header>
       <div class="logo">
-        <a href="https://gabemods.github.io/Gabe-Mods-Website">
+        <a href="https://gabemods.github.io/Gabe-Mods-Website-v2/">
           <img src="assets/images/IMG_7790.png" alt="Gabe Mods Logo" class="logo-image">
         </a>
       </div>
       
-      <h1 class="page-title">Gabe Mods</h1>
+      <h1 class="page-title">Gabe Mods V2</h1>
       
       <div class="menu-icon" id="menu-icon">
         <span class="bar"></span>
@@ -92,7 +92,7 @@
 </section>
 
 <section class="get-the-app">
-  <button id="get-app-btn">Get the App</button>
+  <button id="get-app-btn" class="get-app">Get the App</button>
   <p class="app-description">
     Download the Gabe Mods App. The most recent version is <strong>v1.0.1</strong>.
     Whenever there is an update to the app, you can get it here on the official website.
@@ -101,7 +101,6 @@
 
 <!-- Contact Section (added) -->
 <section id="contact">
-  <h2>Contact</h2>
   <p>Get in touch with us through any of the platforms below:</p>
   
   <div class="contact-buttons">
@@ -175,21 +174,21 @@
     });
   </script>
 
-  <script>
-    document.getElementById('get-app-btn').addEventListener('click', function () {
-      const button = this;
-      button.style.transition = 'transform 0.2s ease';
-      button.style.transform = 'scale(1.1)';
-
-      setTimeout(() => {
-        button.style.transform = 'scale(1)';
-      }, 150);
-
-      setTimeout(() => {
-        window.location.href = 'download/';
-      }, 300);
-    });
-  </script>
+<script>
+  document.getElementById('get-app-btn').addEventListener('click', function() {
+    const button = this;
+    button.style.transition = 'transform 0.2s ease';
+    button.style.transform = 'scale(0.90)';
+    
+    setTimeout(() => {
+      button.style.transform = 'scale(1)';
+    }, 200);
+    
+    setTimeout(() => {
+      window.location.href = 'download/';
+    }, 800);
+  });
+</script>
 
   <script>
   gsap.registerPlugin(ScrollTrigger);
@@ -236,6 +235,34 @@
   barba.hooks.afterEnter((data) => {
     animatePageTitle(data.next.container);
   });
+</script>
+
+<script>
+document.getElementById('get-app-btn').addEventListener('click', function() {
+const button = this;
+
+// Trigger scale animation
+button.style.transition = 'transform 0.2s ease';
+button.style.transform = 'scale(0.90)';
+
+// After the button scales down, revert to normal size
+setTimeout(() => {
+button.style.transform = 'scale(1)';
+}, 200);
+
+// Add the 'clicked' class to trigger splash animation
+button.classList.add('clicked');
+
+// Remove the 'clicked' class after the animation to reset
+setTimeout(() => {
+button.classList.remove('clicked');
+}, 500);
+
+// Redirect after the animation is done
+setTimeout(() => {
+window.location.href = 'download/';
+}, 800);
+});
 </script>
 </body>
 </html>
