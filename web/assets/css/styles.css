@@ -847,3 +847,22 @@ html, body {
 #home #contact p {
   padding-top: 5px; /* smaller gap just for contact on home */
 }
+
+.version-button {
+    background-color: #007bff;
+    color: #ffffff;
+    border: none;
+    padding: 10px 12px; /* Smaller size */
+    font-size: 14px;
+    width: 350px; /* Set a fixed width */
+    cursor: pointer;
+    border-radius: 60px;
+    position: absolute;
+    top: 180px; /* Adjust this value based on the position in your image */
+    left: 20px; /* Adjust this value too */
+    transition: background-color 0.3s ease;
+}
+
+.version-button:hover {
+    background-color: #0056b3;
+}
