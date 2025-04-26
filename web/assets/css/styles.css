@@ -852,7 +852,7 @@ html, body {
     background-color: #007bff;
     color: #ffffff;
     border: none;
-    padding: 10px 12px; /* Smaller size */
+    padding: 12px 24px; /* Smaller size */
     font-size: 14px;
     width: 350px; /* Set a fixed width */
     cursor: pointer;
