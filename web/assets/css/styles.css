@@ -93,7 +93,7 @@ header {
     -webkit-backdrop-filter: blur(15px);
     z-index: 7000;
     background: rgba(0, 0, 0, 0.3); /* translucent */
-    border-radius: 50px; /* slightly rounded corners */
+    border-radius: 100px; /* slightly rounded corners */
     box-sizing: border-box;
 }
 
@@ -851,7 +851,7 @@ html, body {
 .card {
     margin-top: 40px; /* Adjust this to control spacing */
     padding: 1px 20px 30px 30px; /* Reduce padding to remove extra space above text */
-    border-radius: 16px;
+    border-radius: 25px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
     max-width: 350px;
     text-align: center;
