@@ -6,23 +6,22 @@
   <meta name="theme-color" content="#000000"/>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-  <title>Gabe Mods V2 - IOS App</title>
+  <title>Gabe Mods - IOS</title>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
   <style>
     body {
-      margin: 0;
-      padding: 0;
-      height: 100vh;
-      width: 100vw;
-      overflow: hidden;
-      background: url('../assets/images/IMG_7787.jpeg') no-repeat center center fixed;
-      background-size: cover;
-      font-family: 'Inter', sans-serif;
-      color: white;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+  background: linear-gradient(135deg, #0D00FF, #000000); /* Adjust colors as needed */
+  font-family: 'Inter', sans-serif;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
     .card {
       background: rgba(0, 0, 0, 0.5);
       border-radius: 25px;
@@ -60,13 +59,51 @@
       height: 120px;
       border-radius: 50%;
       object-fit: cover;
-      border: 2px solid blue;
+      border: 2px solid white;
+    }
+
+     .back-button {
+        position: absolute;
+        top: 20px;
+        left: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 50px;
+        height: 50px;
+        background-color: transparent;
+        border-radius: 50%;
+        cursor: pointer;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        transition: background 0.3s ease;
+        color: white; /* Ensures text is white */
+        text-align: center;
+        text-decoration: none; /* Prevents underlining */
+     }
+
+       .back-button:hover, .back-button:focus, .back-button:active {
+    text-decoration: none; /* Ensures it never gets underlined */
+    color: white; /* Keeps text white at all times */
+}
+    
+    .back-button img {
+        width: 24px; /* Adjust size to fit */
+        height: 24px;
+    }
+
+    .back-button:active {
+        background-color: rgba(128, 128, 128, 0.5); /* Semi-transparent grey effect */
     }
   </style>
 </head>
 <body>
   <div class="card">
-    <img src="../assets/images/IMG_7790.jpeg" alt="Gabe Mods Logo" class="logo">
+    <!-- Correctly structured back button -->
+    <a href="https://gabemods.github.io/Gabe-Mods-Website/download/" class="back-button">
+      Back
+    </a>
+
+    <img src="../assets/images/IMG_7790.png" alt="Gabe Mods Logo" class="logo">
     <h1>Gabe Mods App iOS</h1>
     <p>The Gabe Mods app is not yet available for iOS (iPhone).</p>
     <p>In the future I hope to change that. Until then iOS users can use the website.</p>
