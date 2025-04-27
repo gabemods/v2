@@ -85,7 +85,7 @@ header {
     left: 50%;
     transform: translateX(-50%); /* centers the header horizontally */
     width: 90%; /* slightly smaller width to bring it closer to the sides */
-    padding: 5px 10px; /* reduced padding for less height */
+    padding: 10px 15px; /* reduced padding for less height */
     display: flex;
     align-items: center;
     justify-content: space-between;
