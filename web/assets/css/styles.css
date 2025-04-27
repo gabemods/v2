@@ -94,6 +94,7 @@ header {
     z-index: 7000;
     background: rgba(0, 0, 0, 0.3); /* translucent */
     border-radius: 100px; /* slightly rounded corners */
+   box-shadow: 0 0 4px 8px rgba(52,152,219, 0.1);
     box-sizing: border-box;
 }
 
