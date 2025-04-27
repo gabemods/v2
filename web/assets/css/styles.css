@@ -112,6 +112,7 @@ link[rel="icon"] {
     height: 50px; /* smaller height */
     border-radius: 50%; /* keep the circular shape */
     object-fit: cover; /* maintain aspect ratio while filling the container */
+    box-shadow: 0 0 10px 2px rgba(52,152,219, 0.9);
     display: block;
     top: 2px;
 right: 10px;
