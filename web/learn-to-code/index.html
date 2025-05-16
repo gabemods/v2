@@ -150,23 +150,17 @@
 </script>
 
   <script>
-  const moreButton = document.getElementById('more-button');
-  const moreLinks = document.getElementById('more-links');
-  const arrow = document.getElementById('arrow');
-
-  moreButton.addEventListener('click', () => {
-    moreLinks.classList.toggle('show');
-    arrow.classList.toggle('rotated');
-  });
-</script>
-
-  <script>
   function animatePageTitle(container = document) {
     const title = container.querySelector('.page-title');
     if (title) {
       gsap.fromTo(title,
-        { opacity: 1, scale: 0.5 },
-        { opacity: 1, scale: 1, duration: 1.5, ease: 'power1.out' }
+        { opacity: 0, scale: 0.5 },
+        {
+          opacity: 1,
+          scale: 1,
+          duration: 0.8,
+          ease: 'elastic.out(1, 0.5)'
+        }
       );
     }
   }
